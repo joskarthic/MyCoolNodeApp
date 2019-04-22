@@ -1,12 +1,7 @@
-const http = require('http');
-const express = require('express');
-// const mongodbCon = require('./config/database'); //database configuration
-const app = express();
+const express = require('express')
+const app = express()
+const port = 3000
 
-app.get('/', function(req, res){
-	res.json({"tutorial" : "Build REST API with node.js"});
-});
+app.get('/', (req, res) => res.send('Hello World!'))
 
-app.listen(3000, function(){
-	console.log('Node server listening on port 3000');
-});
+app.listen(port, () => console.log(`Example app listening on port ${port}!`));
