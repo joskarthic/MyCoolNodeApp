@@ -1,14 +1,19 @@
+const http = require('http');
 
-const express = require('express');
-// const mongoose = require('./config/database'); //database configuration
-const app = express();
+const port=process.env.PORT || 3000
 
-// mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
+const server = http.createServer((req, res) => {
 
-app.get('/', function(req, res){
-	res.json({"tutorial" : "Build REST API with node.js"});
+res.statusCode = 200;
+
+res.setHeader('Content-Type', 'text/html');
+
+res.end('<h1>Hello World</h1>');
+
 });
 
-app.listen(3000, function(){
-	console.log('Node server listening on port 3000');
+server.listen(port,() => {
+
+console.log(`Server running at port `+port);
+
 });
