@@ -1,6 +1,6 @@
 const http = require('http');
 const express = require('express');
-const mongoose = require('./config/database'); //database configuration
+// const mongoose = require('./config/database'); //database configuration
 const app = express();
 
 // mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
