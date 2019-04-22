@@ -1,5 +1,10 @@
 const http = require('http');
 const express = require('express');
+const mongodbCon = require('./config/database'); //database configuration
+const app = express();
+
+
+
 const port=process.env.PORT || 3000
 
 const server = http.createServer((req, res) => {
