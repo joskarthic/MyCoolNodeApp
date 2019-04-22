@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const mongoose = require('./config/database'); //database configuration
-const port = 8888
+const port = 8080
 const users = require('./routes/users');
 const bodyParser = require('body-parser');
 
@@ -19,4 +19,4 @@ app.get('/', function(req, res){
 app.use('/users', users);
 
 
-app.listen(process.env.PORT || 8888, () => console.log(`Example app listening on port ${port}!`));
+app.listen(process.env.PORT || 8080, () => console.log(`Example app listening on port ${port}!`));
