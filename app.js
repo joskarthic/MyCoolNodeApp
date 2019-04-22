@@ -1,4 +1,4 @@
-const http = require('http');
+
 const express = require('express');
 // const mongoose = require('./config/database'); //database configuration
 const app = express();
