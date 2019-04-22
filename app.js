@@ -1,6 +1,6 @@
 const http = require('http');
 const express = require('express');
-const mongodbCon = require('./config/database'); //database configuration
+// const mongodbCon = require('./config/database'); //database configuration
 const app = express();
 
 
