@@ -30,4 +30,13 @@ module.exports = {
 		});
 	},
 
+	getUser: function(req, res, next){
+		let userData = [
+		    { "id":1, "name":"Ford", "models":"Fiesta"},
+		    { "id":2, "name":"BMW", "models":"320"},
+		    { "id":3, "name":"Fiat", "models":"500"}
+		]
+		res.json({status:"success", message: "Users list found!!!", data:{user: userData}});
+	}
+
 }					
