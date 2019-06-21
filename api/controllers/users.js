@@ -37,8 +37,8 @@ module.exports = {
 		    { "id":3, "name":"Fiat", "models":"500"}
 		]
 		
-		// res.header("Access-Control-Allow-Origin", "*");
-  		// res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+		res.header("Access-Control-Allow-Origin", "*");
+  		res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 		res.json({status:"success", message: "Users list found!!!", data:{user: userData}});
 	}
 
